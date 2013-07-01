@@ -1,0 +1,11 @@
+{
+    "loggedout_header": {
+        "en": "Logged out"
+    },
+    "loggedout_description": {
+        "en": "You have been logged out. Thank you for using this service."
+    },
+    "continue_heading": {
+        "en": "Go back to the service"
+    }
+}

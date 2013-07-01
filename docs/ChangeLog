@@ -1,0 +1,79 @@
+Bjørn Rohde Jensen <brj@statsbiblioteket.dk>
+
+?2013-06-25 Bjørn Rohde Jensen <brj@statsbiblioteket.dk>
+        * Release 4.1.0
+        * Added support for storing tickets in memcached.
+        * Added support for proxy tickets.
+        * Added support for renewing login.
+        * Added an optional logged out landing page with a return url.
+        * Added support for specifying an idp during login thus skipping the disco step.
+
+2013-01-29 Bjørn Rohde Jensen <brj@statsbiblioteket.dk>
+        * Release 4.0.0
+        * Moved all filters to a dedicated project.
+        * Moved theme related code into the sbthemes project.
+        * Added an abstract cas ticket store with concrete subclasses to store tickets locally or in the attribute store.
+        * Changed cas 2.0 response generation from hand coded to using php dom document.
+        * Fixed a bug in cas 1.0 response generation, where yes/no was returned in upper case.
+
+2012-10-31 Bjørn Rohde Jensen <brj@statsbiblioteket.dk>
+        * release 3.3.0
+        * IPRoleMapper can now be configured to add its roles to any given attribute
+          by setting the filter parameter 'targetAttributeName'.
+
+2012-10-24 Bjørn Rohde Jensen <brj@statsbiblioteket.dk>
+
+        * release 3.2
+        * Added AttributeCollector auth filter for collecting attributes from
+	      the attribute store.
+        * Added CAS logout
+
+2012-05-22  Per Møldrup-Dalum  <pdj@statsbiblioteket.dk>
+
+	* release 3.1
+	* Corrected a spelling bug
+
+
+2012-05-08  Per Møldrup-Dalum  <pdj@statsbiblioteket.dk>
+
+	* Release 3
+	* Added the Statsbiblioteket theme from sbdisco
+	* Added the IP role mapper from sbdisco
+
+
+2011-10-31  Per Møldrup-Dalum  <pdj@statsbiblioteket.dk>
+
+	* Release 2.3
+
+	* Added a hack to keep compatibility with the eduPersonNIN attribute.
+
+
+2011-03-29  Per Møldrup-Dalum  <pdj@statsbiblioteket.dk>
+
+	* Release 2.2
+
+	* Reintroduced ignore urn:oid attributes.
+	* Added configurable base 64 encoding of attribute values.
+	* Removed debug messages.
+	* Changed the casserver to use the configured auth source.
+
+2011-01-18  Per Møldrup-Dalum  <pdj@statsbiblioteket.dk>
+
+	* Changed default from disabled to enabled
+
+2011-01-17  Per Møldrup-Dalum  <pdj@statsbiblioteket.dk>
+
+	* Creating release 2.0
+
+	* All files are rewritten based on work by Dubravko Voncina. See Google
+	Groups discussion in this thread:
+	http://groups.google.com/group/simplesamlphp/browse_thread/thread/4c655d169532650a
+
+	* Creating release 2.1
+		The sbcasserver module now uses its own "namespace" instead of hickjacking
+		the casserver "namespace". Therefore the
+		config-templates/module_casserver.php har been renamed to
+		module_sbcasserver.php
+
+	* The files in www has all beed changed to use the new "namespace".
+

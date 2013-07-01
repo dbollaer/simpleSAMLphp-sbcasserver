@@ -1,0 +1,11 @@
+{
+    "loggedout_header": {
+        "da": "Du er logget ud"
+    },
+    "loggedout_description": {
+        "da": "Du er logget ud. Tak for fordi du brugte denne tjeneste."
+    },
+    "continue_heading": {
+        "da": "Tilbage til tjenesten"
+    }
+}
